@@ -1,4 +1,4 @@
-# Miuul_ML_Bootcamp
+# Miuul_ML_Summer_Camp
 ## Week 1: Python Programming
 ### **Topics**
  * Virtual Environment
