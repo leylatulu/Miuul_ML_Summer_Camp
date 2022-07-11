@@ -22,3 +22,4 @@
 ### **Homeworks**
  * Adding properties and docstrings to functions
  * Pandas exercises
+ * Rule-based classification
