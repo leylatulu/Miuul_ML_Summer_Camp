@@ -21,4 +21,17 @@
 ### **Homeworks**
  * [Adding properties and docstrings to functions](https://github.com/leylatulu/Miuul_ML_Summer_Camp/blob/main/PythonProgramming/hw4.py)
  * [Pandas exercises](https://github.com/leylatulu/Miuul_ML_Summer_Camp/blob/main/PythonProgramming/hw5.py)
+### **Project**
  * [Rule-based classification](https://github.com/leylatulu/Miuul_ML_Summer_Camp/blob/main/PythonProgramming/proje.py)
+-----------------------------
+## Week 3: Feature Engineering
+### **Topics**
+ * Feature Engineering
+ * Outliers
+ * Missing Values
+ * Encoding Scaling
+ * Feature Extraction
+ * Application
+### **Projects**
+ * [Diabetes Feature Engineering]
+ * [Telco Customer Churn Feature Engineering]
