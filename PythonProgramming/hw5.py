@@ -55,13 +55,8 @@ df.groupby(['pclass','sex']).agg({'survived': ["sum","count", "mean"]})
 # Görev 16: 30 yaşın altında olanlar 1, 30'a eşit ve üstünde olanlara 0 verecek bir fonksiyon yazın. 
 # Yazdığınız fonksiyonu kullanarak titanik veri setinde age_flag adında bir değişken oluşturunuz oluşturunuz. 
 # (apply ve lambda yapılarını kullanınız)
-def ageflag(age):
-    if age < 30:
-        return 1
-    else:
-        return 0
 
-df['age_flag'] = df.age.apply(ageflag)
+df['age_flag'] = df.age.apply(lambda x: x if x<30 else 0)
 
 # Görev 17: Seaborn kütüphanesi içerisinden Tips veri setini tanımlayınız.
 df1 = sns.load_dataset('tips')
@@ -87,21 +82,22 @@ df1["total_bill_tip_sum"] = df1.total_bill + df1.tip
 # Kadınlar için Female olanlarının ortalamaları, erkekler için ise Male olanların ortalamaları dikkate alınacaktır. 
 # Parametre olarak cinsiyet ve total_bill alan bir fonksiyon yazarak başlayınız. (If-else koşulları içerecek)
 
-def flag(df):
-    avg = df1.groupby('sex')['total_bill'].mean()
+f_avg = df1[df1["sex"] == "Female"]["total_bill"].mean() 
+m_avg = df1[df1["sex"] == "Male"]["total_bill"].mean() 
 
-    if df["sex"] == "Female":
-        if df["total_bill"]  < avg[1]:
+def flag(sex, total_bill):
+    if sex == "Female":
+        if total_bill < f_avg:
             return 0
-        elif df["total_bill"] >= avg[1]:
+        else:
             return 1
     else:
-        if df["total_bill"] < avg[0]:
+        if total_bill < m_avg:
             return 0
-        elif df["total_bill"] >= avg[0]:
+        else:
             return 1
 
-df1["total_bill_flag"] = df1.apply(flag, axis=1)
+df1["total_bill_flag"] = df1[["sex","total_bill"]].apply(lambda x: flag(x["sex"],x["total_bill"]),axis=1)
 
 # Görev 24: total_bill_flag değişkenini kullanarak cinsiyetlere göre ortalamanın altında ve üstünde olanların sayısını gözlemleyiniz.
 df1.groupby(['total_bill_flag','sex'])['sex'].count()
