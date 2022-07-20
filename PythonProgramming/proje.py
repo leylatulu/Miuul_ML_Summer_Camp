@@ -38,7 +38,7 @@ import seaborn as sns
 
 # Görev 1:
 ## Soru 1: persona.csv dosyasını okutunuz ve veri seti ile ilgili genel bilgileri gösteriniz.
-df = pd.read_csv('data_analysis_with_python\datasets\persona.csv')
+df = pd.read_csv('datasets\persona.csv')
 
 def general_information(df):
     print("##### INFO #####")
