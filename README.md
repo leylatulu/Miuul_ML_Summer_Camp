@@ -35,3 +35,11 @@
 ### **Projects**
  * [Diabetes Feature Engineering]
  * [Telco Customer Churn Feature Engineering]
+-----------------------------
+## Week 4: Machine Learning
+### **Topics**
+ *
+ *
+ *
+### **Project**
+ *
