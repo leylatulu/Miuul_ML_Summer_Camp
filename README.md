@@ -38,8 +38,8 @@
 -----------------------------
 ## Week 4: Machine Learning
 ### **Topics**
- *
- *
- *
+ * Fundamental Concepts
+ * Linear Regression
+ * Logistic Regression
 ### **Project**
- *
+ * [Salary Prediction]
