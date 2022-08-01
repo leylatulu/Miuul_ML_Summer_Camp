@@ -33,8 +33,8 @@
  * Feature Extraction
  * Application
 ### **Projects**
- * [Diabetes Feature Engineering]
- * [Telco Customer Churn Feature Engineering]
+ * Diabetes Feature Engineering
+ * Telco Customer Churn Feature Engineering
 -----------------------------
 ## Week 4: Machine Learning
 ### **Topics**
@@ -42,4 +42,14 @@
  * Linear Regression
  * Logistic Regression
 ### **Project**
- * [Salary Prediction]
+ * Salary Prediction
+-----------------------------
+ ## Week 5: Machine Learning
+ ### **Topics**
+ * KNN
+ * CART
+ * Advanced Tree Methods
+ * Imbalanced Data Set
+### **Project**
+ * House Price Prediction Model
+ * Customer Churn Prediction Model
